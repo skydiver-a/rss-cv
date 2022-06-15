@@ -34,6 +34,7 @@
 html,
 body {
     height: 100%;
+
     background-color: var(--color-text);
 }
 
@@ -49,14 +50,19 @@ li {
 .wrapper {
     width: 100%;
     height: 100%;
+
+    position: relative;
 }
 
 /* Content */
 .header,
 .main {
+    position: absolute;
+    top: 0;
+    left: 40%;
+
     width: 270px;
     margin: 50px auto;
-    position: relative;
 }
 
 .navigation-list__item_word {
@@ -136,4 +142,114 @@ li {
 }
 .navigation-list__item:nth-child(7) .navigation-list__item_word:nth-child(2) {
     font-size: 7.8em;
+}
+
+/* Section pool */
+.section {
+    position: absolute;
+
+    font-family: "Open Sans Condensed";
+    color: var(--color-text);
+
+    padding: 20px;
+}
+.section span.section-content {
+    display: inline-block;
+    width: 0;
+    height: 0;
+
+    position: absolute;
+}
+
+.section:nth-child(1) {
+    height: 75px;
+    width: 75px;
+    padding: 10px;
+
+    top: 30px;
+    left: -100px;
+
+    background-color: var(--color-blue-light-m);
+
+    font-size: 1.5em;
+    line-height: 1;
+    border-radius: 0 20px 0 20px;
+}
+.section:nth-child(1) span.section-content {
+    border-left: 12px solid transparent;
+    border-right: 0px solid var(--color-blue-light-m);
+    border-bottom: 12px solid var(--color-blue-light-m);
+
+
+    top: 63px;
+    left: 75px;
+    transform: rotateY(180deg);
+}
+
+.section:nth-child(2) {
+    height: 150px;
+    width: 170px;
+
+    top: 10px;
+    left: 100%;
+
+    background-color: var(--color-blue-light-m);
+
+    border-radius: 30px 0 30px 0;
+}
+.section:nth-child(2) span.section-content {
+    border-left: 20px solid transparent;
+    border-right: 0px solid var(--color-blue-light-m);
+    border-bottom: 20px solid var(--color-blue-light-m);
+
+    top: 130px;
+    left: -10px;
+}
+.section:nth-child(2) img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 20px 0;
+}
+
+.section:nth-child(3) {
+
+}
+.section:nth-child(3) span.section-content {
+
+}
+
+.section:nth-child(4) {
+
+}
+.section:nth-child(4) span.section-content {
+
+}
+
+.section:nth-child(5) {
+
+}
+.section:nth-child(5) span.section-content {
+
+}
+
+.section:nth-child(6) {
+
+}
+.section:nth-child(6) span.section-content {
+
+}
+
+.section:nth-child(7) {
+
+}
+.section:nth-child(7) span.section-content {
+
+}
+
+.section:nth-child(8) {
+
+}
+.section:nth-child(8) span.section-content {
+
 }
