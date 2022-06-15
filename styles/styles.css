@@ -152,6 +152,7 @@ li {
     color: var(--color-text);
 
     padding: 20px;
+    border-radius: 30px 0 30px 0;
 }
 .section span.section-content {
     display: inline-block;
@@ -194,8 +195,6 @@ li {
     left: 100%;
 
     background-color: var(--color-blue-light-m);
-
-    border-radius: 30px 0 30px 0;
 }
 .section:nth-child(2) span.section-content {
     border-left: 20px solid transparent;
@@ -213,10 +212,22 @@ li {
 }
 
 .section:nth-child(3) {
+    height: 200px;
+    width: 250px;
 
+    top: 165px;
+    left: -280px;
+
+    background-color: var(--color-blue-light-s);
 }
 .section:nth-child(3) span.section-content {
+    border-left: 20px solid transparent;
+    border-right: 0px solid var(--color-blue-light-s);
+    border-bottom: 20px solid var(--color-blue-light-s);
 
+    top: 0;
+    left: 250px;
+    transform: rotate(180deg);
 }
 
 .section:nth-child(4) {
